@@ -1,0 +1,6 @@
+rootProject.name = 'alectronic-java-library'
+
+include 'api'
+include 'integration-test'
+include 'spring-boot-autoconfigure'
+include 'spring-boot-starter'

@@ -1,0 +1,13 @@
+dependencies {
+	compile project(':spring-boot-autoconfigure')
+
+	implementation "org.springframework:spring-context:${springVersion}"
+
+	testCompile "org.springframework:spring-test:${springVersion}"
+	testCompile ("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+	testCompile ("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+	testCompile ("com.jayway.restassured:rest-assured:${restAssuredVersion}") {
+		exclude(module: 'commons-logging')
+	}
+}
+
